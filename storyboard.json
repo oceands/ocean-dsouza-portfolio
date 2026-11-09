@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Ocean D'souza — Platform Product Manager Launch Video",
+    "durationSec": 10,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "narrativeStructure": "teaser",
+    "fonts": {
+      "display": { "family": "Switzer", "weights": ["600", "700", "800"] },
+      "body": { "family": "Switzer", "weights": ["400", "500"] }
+    },
+    "colors": {
+      "background": "#0A0A0C",
+      "surface": "#141418",
+      "primary": "#F5F5F7",
+      "muted": "#98989F",
+      "accent": "#22C55E",
+      "highlight": "#38BDF8"
+    }
+  },
+  "voice": {
+    "enabled": false
+  },
+  "scenes": [
+    {
+      "id": "hook-reveal",
+      "act": "hook",
+      "startSec": 0,
+      "durationSec": 3.2,
+      "purpose": "Establish personal brand authority and role immediately within 3 seconds",
+      "emotionalBeat": "High-craft, focused, confident arrival",
+      "voiceover": null,
+      "layout": "Split view: left side prominent kinetic headline and status badge, right side framed portrait in ambient radial glow",
+      "elements": "Emerald status beacon, Ocean D'souza name in display typography, role tag, and portrait card",
+      "animation": "Name springs from translateY(24) with opacity 0->1 and blur 8->0 over 0.5s; portrait scales from 0.94->1.0 with subtle perspective tilt",
+      "camera": "Slow subtle push-in zoom 1.0 -> 1.03",
+      "lighting": "Emerald ambient glow from top-left, subtle specular rim light on portrait edge",
+      "transitionOut": "Directional slide-left with motion blur into Scene 2"
+    },
+    {
+      "id": "platform-metrics",
+      "act": "showcase",
+      "startSec": 3.0,
+      "durationSec": 3.8,
+      "purpose": "Demonstrate tangible platform scale and shipped impact",
+      "emotionalBeat": "Momentum, credibility, massive operational scale",
+      "voiceover": null,
+      "layout": "Grid of 4 high-contrast glassmorphic platform cards with metrics and partner badges",
+      "elements": "BarakatFresh (+24% ATC), Checkout.com (+18% Conv), BEXA AI (5,000+ SKUs), Dynamics 365 (-85% Effort)",
+      "animation": "Cards cascade in with 90ms stagger, numbers count up, glowing emerald accent lines pulse across top borders",
+      "camera": "Pan across cards with slight 3D rotation (Y-axis 4deg -> 0deg)",
+      "lighting": "Volumetric light sweep across card surfaces at 1.2s",
+      "transitionOut": "Converge inward to center focal point"
+    },
+    {
+      "id": "climax-close",
+      "act": "close",
+      "startSec": 6.6,
+      "durationSec": 3.4,
+      "purpose": "Memorable branding, live production URL and direct contact call-to-action",
+      "emotionalBeat": "Resolution, polished finish, immediate desire to visit and connect",
+      "voiceover": null,
+      "layout": "Centered hero OD monogram emblem with pulsing status rings, production domain pill, and contact CTAs",
+      "elements": "OD Monogram, ocean-dsouza-portfolio.vercel.app, Topmate & Email badges",
+      "animation": "Emblem slams into center with elastic spring overshoot, expanding emerald shockwave ring, domain pill unfolds",
+      "camera": "Slow settle to stationary hold",
+      "lighting": "Centered spotlight vignette with floating particle shimmer",
+      "transitionOut": "Hold until fade to black at frame 295"
+    }
+  ]
+}

@@ -49,3 +49,4 @@ All notable product, design, and platform updates across the versions of **Ocean
 
 ### New Features
 - **Next.js 14 App Router + Tailwind CSS + Framer Motion Foundation:** Built the initial portfolio with 10 custom SVG project stage cards (`components/ProjectStageArt.tsx`), interactive `TiltedCard`, `Magnet`, and `ClickSpark` physics components, and interactive case-study deep-dive modals.
+
