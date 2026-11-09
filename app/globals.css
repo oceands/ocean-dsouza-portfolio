@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+html[data-theme="dark"] {
+  --bg-canvas: #0A0A0A;
+  --bg-surface: #141417;
+  --bg-elevated: #1F1F24;
+  --bg-card: #18181C;
+  --ink: #F5F5F7;
+  --ink-muted: #98989F;
+  --ink-subtle: #6E6E77;
+  --tile-bg: #141417;
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  --bg-canvas: #F6F6F3;
+  --bg-surface: #EAEAE4;
+  --bg-elevated: #DCDCD4;
+  --bg-card: #FFFFFF;
+  --ink: #111113;
+  --ink-muted: #4A4A52;
+  --ink-subtle: #71717A;
+  --tile-bg: #EAEAE4;
+  color-scheme: light;
+}
+
+/* Explicit theme class bindings so light/dark toggle works instantaneously */
+.bg-canvas {
+  background-color: var(--bg-canvas) !important;
+}
+.bg-canvas-surface {
+  background-color: var(--bg-surface) !important;
+}
+.bg-canvas-elevated {
+  background-color: var(--bg-elevated) !important;
+}
+.bg-ink {
+  background-color: var(--ink) !important;
+}
+.text-ink {
+  color: var(--ink) !important;
+}
+.text-canvas {
+  color: var(--bg-canvas) !important;
+}
+.text-ink-muted {
+  color: var(--ink-muted) !important;
+}
+.text-ink-subtle {
+  color: var(--ink-subtle) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-canvas);
+  color: var(--ink);
+  -webkit-text-size-adjust: 100%;
+  transition: background-color 0.22s ease, color 0.22s ease;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "tnum" on, "lnum" on;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  transition: background-color 0.22s ease, color 0.22s ease;
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background-color: var(--ink);
+  color: var(--bg-canvas);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* Hide scrollbar for horizontal carousel while keeping scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
