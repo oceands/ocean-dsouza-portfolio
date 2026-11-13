@@ -382,3 +382,4 @@ export const Scene3ClimaxClose: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

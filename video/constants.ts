@@ -18,3 +18,4 @@ export const COLORS = {
   gold: "#FACC15",
   cardBorder: "rgba(255, 255, 255, 0.08)",
 };
+

@@ -272,3 +272,4 @@ export const Scene2PlatformMetrics: React.FC = () => {
     </AbsoluteFill>
   );
 };
+

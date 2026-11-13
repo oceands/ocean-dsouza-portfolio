@@ -289,3 +289,4 @@ export const Scene1HookReveal: React.FC = () => {
     </AbsoluteFill>
   );
 };
+
